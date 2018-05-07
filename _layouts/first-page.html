@@ -1,0 +1,48 @@
+{% include header.html %}
+  <div class="row">
+	  <div class="firstpage medium-8 columns">
+	    {{ content }}
+	  </div>
+	  <div class="rightbar medium-4 columns">
+			<h5> Последние публикации сотрудников отделения:</h5>
+	  		{% for post in site.categories.journ limit:2 %}
+			<div class="student">
+			      <div class="article"><img src="/images/{{ post.picture }}"></div>
+			      <p>{{ post.addinfo }} </p>
+			<p> {{ post.authors }} <a href="{{ post.url }}"> {{ post.title }} </a> </p></div>  
+			{% endfor %}
+			<h5> Изданные книги: </h5>
+	  		{% for post in site.categories.book limit:2 %}
+			<div class="student">
+			      <div class="article"><img src="/images/{{ post.picture }}"></div>
+			      <p>{{ post.addinfo }} </p>
+			<p> {{ post.authors }} <a href="{{ post.url }}"> {{ post.title }} </a> </p></div>  
+			{% endfor %}
+
+	  </div>
+  </div> 
+
+	<div class="links row">
+  <!-- <hr> -->
+		<div class="large-10 push-1 columns">
+			<ul class="small-block-grid-3">
+				<li>
+					<a href="http://rnsi.ru/">
+						<img src="/images/rnsi.png" alt="" class="greydout">
+					</a>
+				</li>
+				<li>
+					<a href="http://глиома.рф/">
+						<img src="/images/gliomarf.png" alt="" class="greydout">
+					</a>
+				</li>
+				<li>
+					<a href="http://russia.aesculap-academy.com/">
+						<img src="/images/aesculap.png" alt="" class="greydout">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+{% include footer.html %}
