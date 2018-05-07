@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+name: санкт-петербургская ассоциация нейрохирургов
+highlighter: pygments 
+relative_permalinks: false
+markdown: redcarpet 
+paginate: 4
+paginate_path: /articlesnbooks/page:num
