@@ -1,0 +1,104 @@
+<html class="no-js" lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/favicons/favicon.ico" type="image/x-icon">
+    <title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/css/foundation.css" />
+	<link rel="stylesheet" href="/css/dep4.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="/js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="row">
+			<div class="contain-to-grid">
+				<nav class="top-bar" data-topbar role="navigation">
+					<ul class="title-area">
+						<li class="name">
+
+						</li>
+						<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+						<li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a>
+						</li>
+					</ul>
+					<section class="top-bar-section">
+						<ul class="left">
+							<li class="{% if page.categories == 'пациентам' %}active{% endif %} has-dropdown"><a href="/patients/geninfo/">пациентам</a>
+								<ul class="dropdown show-for-small-only">
+						            {% for pag in site.pages %}
+						              {% if pag.categories == 'пациентам'  %}
+						              <li{% if pag.title == page.title %} class="active"{% endif %}>
+						                <a href="{{pag.url}}">{{pag.title}}</a>
+						              </li>
+						              {% endif %}
+						            {% endfor %}
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="{% if page.categories == 'коллегам' %}active{% endif %} has-dropdown"><a href="/collegues/presentation/">коллегам</a>	
+								<ul class="dropdown show-for-small-only">
+						            {% for pag in site.pages %}
+						              {% if pag.categories == 'коллегам'  %}
+						              <li{% if pag.title == page.title %} class="active"{% endif %}>
+						                <a href="{{pag.url}}">{{pag.title}}</a>
+						              </li>
+						              {% endif %}
+						            {% endfor %}
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="{% if page.categories == 'контакты' %}active{% endif %} has-dropdown"><a href="/contacts/maps/">контакты</a>
+								<ul class="dropdown show-for-small-only">
+						            {% for pag in site.pages %}
+						              {% if pag.categories == 'контакты'  %}
+						              <li{% if pag.title == page.title %} class="active"{% endif %}>
+						                <a href="{{pag.url}}">{{pag.title}}</a>
+						              </li>
+						              {% endif %}
+						            {% endfor %}
+								</ul>
+							</li>
+							<li class="divider"></li>
+						</ul>
+						<ul class="right" <li class="has-form">
+							<div class="row collapse">
+								<div class="large-8 small-9 columns">
+									<input type="text" placeholder="поиск по сайту">
+								</div>
+								<div class="large-4 small-3 columns">
+									<a href="#" class=" button expand">найти</a>
+								</div>
+							</div>
+							</li>
+						</ul>
+					</section>
+				</nav>
+			</div>
+		</div>
+
+
+
+
+		<div class="row hide-for-small-only">
+			<div class="medium-2 columns"><a href="/">
+				<image src="/images/logo.svg" class="left"></a>
+			</div>
+			<div class="medium-10 columns">
+				<h1><a href="/">Отделение хирургии опухолей головного и спинного мозга</a></h1>
+				<hr class="logo-border">
+				<h2>Российский научно-исследовательский нейрохирургический институт <pre> им. проф. А.Л. Поленова </pre> </h2>
+			</div>
+		</div>
+		<div class="row show-for-small-only">
+		  <div class="small-12 small-centered columns"><a href="/">
+				<image src="/images/logomin.svg" class="left"></a>
+			</div>
+		</div>
+</div>
+
+	<!-- <hr> -->
+</header>
