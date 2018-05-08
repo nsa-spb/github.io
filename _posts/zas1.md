@@ -1,10 +1,14 @@
 ---
 layout: docs
 title:  "Наш опыт раннего хирургического лечения детей с врождёнными расщелинами верхней губы и нёба"
-categories: journ
-addinfo: "Журнал &laquo;Нейрохирургия&raquo;, №2, 2014"
-authors: "Гончакова С. Г."
-picture: "ns1-2008.jpg"
+categories: meeting
+where: " ул. Маяковского 12, РНХИ им Поленова"
+authors1: "Улитин"
+report1: "Организация"
+authors2: "Иванов"
+report2: "История"
+authors3: "Улитин"
+report3: "случай из практики"
 ---
 
 Despite the fact that an abstract is quite brief, it must do almost as much work as the multi-page paper that follows it. In a computer architecture paper, this means that it should in most cases include the following sections. Each section is typically a single sentence, although there is room for creativity. In particular, the parts may be merged or spread among a set of sentences. Use the following as a checklist for your next abstract:
